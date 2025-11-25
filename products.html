@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | EduMart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 md:mb-0">All School Supplies</h1>
+            <div class="flex items-center gap-4">
+                <div class="relative">
+                    <select class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Sort by: Popular</option>
+                        <option>Sort by: Price Low to High</option>
+                        <option>Sort by: Price High to Low</option>
+                        <option>Sort by: Newest</option>
+                    </select>
+                    <i data-feather="chevron-down" class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <div class="relative">
+                    <select class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>All Categories</option>
+                        <option>Notebooks</option>
+                        <option>Writing Tools</option>
+                        <option>Art Supplies</option>
+                        <option>Tech Accessories</option>
+                        <option>Backpacks</option>
+                    </select>
+                    <i data-feather="chevron-down" class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product cards would be generated dynamically in a real app -->
+            <!-- Example product card (repeated 8 times with different data) -->
+            <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-blue-100 flex items-center justify-center relative">
+                    <img src="http://static.photos/education/640x360/5" alt="Premium Notebooks" class="h-full object-cover">
+                    <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">BESTSELLER</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Premium Notebooks</h3>
+                        <span class="text-lg font-bold text-blue-600">$4.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">200-page college ruled notebooks</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(128)</span>
+                        </div>
+                        <button onclick="addToCart('prod1', 'Premium Notebooks', 4.99)" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More product cards... -->
+            <!-- (Repeating similar structure for 7 more products with different data) -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center mt-16">
+            <nav class="inline-flex rounded-md shadow">
+                <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                    <i data-feather="chevron-left"></i>
+                </a>
+                <a href="#" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-blue-600 font-medium">1</a>
+                <a href="#" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-500 hover:bg-gray-50">2</a>
+                <a href="#" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-500 hover:bg-gray-50">3</a>
+                <a href="#" class="px-4 py-2 border-t border-b border-r border-gray-300 bg-white text-gray-500 hover:bg-gray-50">4</a>
+                <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
