@@ -11,9 +11,8 @@
 </head>
 <body class="bg-gray-50">
     <custom-navbar></custom-navbar>
-    
-    <main class="container mx-auto px-6 py-12">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+    <main class="container mx-auto px-6 pt-24 pb-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <h1 class="text-4xl font-bold text-gray-900 mb-4 md:mb-0">All School Supplies</h1>
             <div class="flex items-center gap-4">
                 <div class="relative">
@@ -38,12 +37,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <!-- Product cards would be generated dynamically in a real app -->
-            <!-- Example product card (repeated 8 times with different data) -->
-            <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-                <div class="h-48 bg-blue-100 flex items-center justify-center relative">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product cards -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="notebooks" data-price="4.99">
+<div class="h-48 bg-blue-100 flex items-center justify-center relative">
                     <img src="http://static.photos/education/640x360/5" alt="Premium Notebooks" class="h-full object-cover">
                     <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">BESTSELLER</div>
                 </div>
@@ -66,10 +63,263 @@
                     </div>
                 </div>
             </div>
-
-            <!-- More product cards... -->
-            <!-- (Repeating similar structure for 7 more products with different data) -->
-        </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="art" data-price="24.99">
+<div class="h-48 bg-green-100 flex items-center justify-center relative">
+                    <img src="http://static.photos/education/640x360/6" alt="Starter Art Kit" class="h-full object-cover">
+                    <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Starter Art Kit</h3>
+                        <span class="text-lg font-bold text-green-600">$24.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete set for beginner artists</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(48)</span>
+                        </div>
+                        <button onclick="addToCart('prod2', 'Starter Art Kit', 24.99)" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="technology" data-price="19.99">
+<div class="h-48 bg-yellow-100 flex items-center justify-center">
+                    <img src="http://static.photos/technology/640x360/7" alt="Scientific Calculator" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Scientific Calculator</h3>
+                        <span class="text-lg font-bold text-yellow-600">$19.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">300+ functions for STEM students</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(92)</span>
+                        </div>
+                        <button onclick="addToCart('prod3', 'Scientific Calculator', 19.99)" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="backpacks" data-price="39.99">
+<div class="h-48 bg-purple-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/8" alt="Ergonomic Backpack" class="h-full object-cover">
+                    <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">FEATURED</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Ergonomic Backpack</h3>
+                        <span class="text-lg font-bold text-purple-600">$39.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Comfortable with laptop compartment</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(56)</span>
+                        </div>
+                        <button onclick="addToCart('prod4', 'Ergonomic Backpack', 39.99)" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="writing" data-price="12.99">
+<div class="h-48 bg-pink-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/9" alt="Gel Pen Set" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Gel Pen Set</h3>
+                        <span class="text-lg font-bold text-pink-600">$12.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">12 vibrant colors, smooth writing</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(187)</span>
+                        </div>
+                        <button onclick="addToCart('prod5', 'Gel Pen Set', 12.99)" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="technology" data-price="29.99">
+<div class="h-48 bg-indigo-100 flex items-center justify-center">
+                    <img src="http://static.photos/technology/640x360/10" alt="Wireless Earbuds" class="h-full object-cover">
+                    <div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">BEST VALUE</div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Wireless Earbuds</h3>
+                        <span class="text-lg font-bold text-indigo-600">$29.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">20hr battery life, clear sound</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(73)</span>
+                        </div>
+                        <button onclick="addToCart('prod6', 'Wireless Earbuds', 29.99)" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="notebooks" data-price="3.49">
+<div class="h-48 bg-red-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/11" alt="Index Cards" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Index Cards</h3>
+                        <span class="text-lg font-bold text-red-600">$3.49</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">100 pack, 3x5 inches, ruled</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(41)</span>
+                        </div>
+                        <button onclick="addToCart('prod7', 'Index Cards', 3.49)" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="planners" data-price="14.99">
+<div class="h-48 bg-teal-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/12" alt="Planner" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Student Planner</h3>
+                        <span class="text-lg font-bold text-teal-600">$14.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Academic year, weekly layout</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(89)</span>
+                        </div>
+                        <button onclick="addToCart('prod8', 'Student Planner', 14.99)" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="technology" data-price="16.99">
+<div class="h-48 bg-orange-100 flex items-center justify-center">
+                    <img src="http://static.photos/technology/640x360/13" alt="USB Flash Drive" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">USB Flash Drive</h3>
+                        <span class="text-lg font-bold text-orange-600">$16.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">64GB, high-speed transfer</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(62)</span>
+                        </div>
+                        <button onclick="addToCart('prod9', 'USB Flash Drive', 16.99)" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="writing" data-price="7.99">
+<div class="h-48 bg-blue-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/14" alt="Highlighters" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Highlighter Set</h3>
+                        <span class="text-lg font-bold text-blue-600">$7.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">8 colors, chisel tip</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(105)</span>
+                        </div>
+                        <button onclick="addToCart('prod10', 'Highlighter Set', 7.99)" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="technology" data-price="89.99">
+<div class="h-48 bg-gray-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/15" alt="Graphing Calculator" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Graphing Calculator</h3>
+                        <span class="text-lg font-bold text-gray-600">$89.99</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Pre-loaded with math functions</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+                            <span class="text-gray-500 text-sm ml-1">(37)</span>
+                        </div>
+                        <button onclick="addToCart('prod11', 'Graphing Calculator', 89.99)" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="office" data-price="5.49">
+<div class="h-48 bg-yellow-100 flex items-center justify-center">
+                    <img src="http://static.photos/education/640x360/16" alt="Sticky Notes" class="h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold">Sticky Notes</h3>
+                        <span class="text-lg font-bold text-yellow-600">$5.49</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">500 sheets, 3x3 inches, assorted colors</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <span class="text-gray-500 text-sm ml-1">(142)</span>
+                        </div>
+                        <button onclick="addToCart('prod12', 'Sticky Notes', 5.49)" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+</div>
 
         <!-- Pagination -->
         <div class="flex justify-center mt-16">
