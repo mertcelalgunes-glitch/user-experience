@@ -123,24 +123,24 @@ class CustomNavbar extends HTMLElement {
           <i data-feather="menu"></i>
         </button>
         <ul>
-          <li><a href="/"><i data-feather="home" class="nav-icon"></i> Home</a></li>
-          <li><a href="/products.html"><i data-feather="shopping-bag" class="nav-icon"></i> Products</a></li>
-          <li><a href="/about.html"><i data-feather="info" class="nav-icon"></i> About</a></li>
-          <li><a href="/contact.html"><i data-feather="mail" class="nav-icon"></i> Contact</a></li>
+          <li><a href="index.html"><i data-feather="home" class="nav-icon"></i> Home</a></li>
+          <li><a href="products.html"><i data-feather="shopping-bag" class="nav-icon"></i> Products</a></li>
+          <li><a href="about.html"><i data-feather="info" class="nav-icon"></i> About</a></li>
+          <li><a href="contact.html"><i data-feather="mail" class="nav-icon"></i> Contact</a></li>
           <li>
-            <a href="/cart.html" class="cart-icon">
+            <a href="cart.html" class="cart-icon">
               <i data-feather="shopping-cart" class="nav-icon"></i>
               <span class="cart-count hidden" id="cart-count">0</span>
             </a>
           </li>
           <li>
-            <a href="/cart.html" class="flex items-center">
+            <a href="cart.html" class="flex items-center">
               <i data-feather="shopping-cart" class="nav-icon"></i>
               <span class="cart-count hidden" id="cart-count">0</span>
             </a>
           </li>
           <li>
-            <a href="/checkout.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-medium transition duration-300">
+            <a href="checkout.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-medium transition duration-300">
               Checkout
             </a>
           </li>
