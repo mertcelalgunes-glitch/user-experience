@@ -103,21 +103,21 @@ class CustomFooter extends HTMLElement {
           <div class="footer-col">
             <h3 class="footer-heading">Quick Links</h3>
             <ul class="footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/products.html">Products</a></li>
-              <li><a href="/about.html">About Us</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h3 class="footer-heading">Categories</h3>
             <ul class="footer-links">
-              <li><a href="/products.html?category=notebooks">Notebooks</a></li>
-              <li><a href="/products.html?category=pens">Pens & Pencils</a></li>
-              <li><a href="/products.html?category=art">Art Supplies</a></li>
-              <li><a href="/products.html?category=tech">Tech Accessories</a></li>
-              <li><a href="/products.html?category=backpacks">Backpacks</a></li>
+              <li><a href="products.html?category=notebooks">Notebooks</a></li>
+              <li><a href="products.html?category=pens">Pens & Pencils</a></li>
+              <li><a href="products.html?category=art">Art Supplies</a></li>
+              <li><a href="products.html?category=tech">Tech Accessories</a></li>
+              <li><a href="products.html?category=backpacks">Backpacks</a></li>
             </ul>
           </div>
           <div class="footer-col">
